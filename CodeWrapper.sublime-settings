@@ -1,0 +1,28 @@
+{
+    "commands":[
+        {
+            // List of syntaxes that should use these rules.
+            // Anything in this list and in the "regexes" will be included.
+            "syntaxes": [
+                "Python"
+            ],
+
+            // List of extensions that should use these rules.
+            // Anything in this list and in the "regexes" will be included.
+            "extensions": [],
+
+            // List of regular expressions that should be matched in the file.
+            // Anything not matching at least one of these rules will be
+            // excluded.
+            "regexes": [],
+
+            // Code to add. If more than one, it will create them all in order.
+            // Formatted with the selected text inserted in place
+            // of all instances of "{0}". Inserted code is indented to
+            // the same level as the selected code.
+            "output_options": [
+                "print(\"{0} =\", {0})"
+            ]
+        }
+    ]
+}

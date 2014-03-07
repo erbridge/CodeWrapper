@@ -1,0 +1,63 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+    "settings": {
+        "tab_size": 4,
+        "translate_tabs_to_spaces": true,
+        "trim_trailing_white_space_on_save": true,
+        "ensure_newline_at_eof_on_save": true,
+        "CodeWrapper": {
+            "commands": [
+                {
+                    "syntaxes": [
+                        "Python",
+                        "PythonImproved"
+                    ],
+                    "extensions": [],
+                    "regexes": [],
+                    "output_options": [
+                        "print(\"{0} =\", {0})"
+                    ]
+                },
+                {
+                    "syntaxes": [
+                        "JavaScript"
+                    ],
+                    "extensions": [],
+                    "regexes": [],
+                    "output_options": [
+                        "console.log(\"{0} = \" + {0})",
+                        "console.log(\"{0} really is \" + {0})"
+                    ]
+                },
+                {
+                    "syntaxes": [],
+                    "extensions": [
+                        "cs"
+                    ],
+                    "regexes": [],
+                    "output_options": [
+                        "Console.Log(\"{0} = \" + {0})"
+                    ]
+                },
+                {
+                    "syntaxes": [],
+                    "extensions": [
+                        "c"
+                    ],
+                    "regexes": [
+                        "\\s+int\\s+testInt\\s+=\\s+0;"
+                    ],
+                    "output_options": [
+                        "cout <<  \"{0} = \" << {0} << endl;"
+                    ]
+                }
+            ]
+        }
+    }
+}
