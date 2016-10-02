@@ -40,7 +40,7 @@ class CodeWrapperCommand(sublime_plugin.TextCommand):
                 continue
 
             project_settings = self.view.settings().get(
-                PROJECT_SETTINGS_KEY, None)
+                PROJECT_SETTINGS_KEY, {})
             commands = self._get_commands(project_settings, selection)
             if not commands:
                 global_settings = sublime.load_settings(SETTINGS_FILE_NAME)
